@@ -1,30 +1,22 @@
+// frontend/app/layout.tsx
+
+import type { Metadata } from 'next'
+import { headers } from 'next/headers'
 import './globals.css'
-import { WagmiProvider, createConfig, http } from 'wagmi'
-import { mainnet } from 'wagmi/chains'
-import { ReownProvider } from '@reown/appkit'
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
-import { ReactNode } from 'react'
-import { ConnectKitProvider, getDefaultConfig } from 'connectkit'
+import ContextProvider from '@/context'
 
-const queryClient = new QueryClient()
+export const metadata: Metadata = {
+  title: 'AppKit Example App',
+  description: 'Powered by WalletConnect & Reown',
+}
 
-const config = createConfig(
-  getDefaultConfig({
-    chains: [mainnet],
-    walletConnectProjectId: 'YOUR_WALLETCONNECT_PROJECT_ID',
-    appName: 'My Web3 Dapp',
-  })
-)
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const cookies = headers().get('cookie') || ''
 
-export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
       <body>
-        <WagmiProvider config={config}>
-          <QueryClientProvider client={queryClient}>
-            <ReownProvider>{children}</ReownProvider>
-          </QueryClientProvider>
-        </WagmiProvider>
+        <ContextProvider cookies={cookies}>{children}</ContextProvider>
       </body>
     </html>
   )

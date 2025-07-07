@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@reown/appkit": "latest",
+    "connectkit": "^1.6.1",
     "autoprefixer": "^10.4.17",
     "clsx": "^1.2.1",
     "ethers": "^6.0.0",
@@ -22,11 +23,15 @@
     "viem": "latest",
     "wagmi": "latest"
   },
-  "devDependencies": {
-    "typescript": "^5.3.3",
-    "@types/react": "^18.2.37",
-    "@types/node": "^20.11.30",
-    "eslint": "^8.56.0",
-    "eslint-config-next": "^14.2.3"
-  }
+"devDependencies": {
+  "tailwindcss": "^3.4.1",
+  "postcss": "^8.4.31",
+  "autoprefixer": "^10.4.21",
+  "typescript": "^5.3.3",
+  "@types/react": "^18.2.37",
+  "@types/node": "^20.11.30",
+  "eslint": "^8.56.0",
+  "eslint-config-next": "^14.2.3"
+}
+
 }

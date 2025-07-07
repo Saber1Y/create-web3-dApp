@@ -1,11 +1,10 @@
-'use client'
+import WalletConnectButton from "@/WalletConnect/WalletConnectButton";
 
-import { ConnectButton } from '@reown/appkit'
-
-export default function HomePage() {
+export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center">
-      <ConnectButton />
-    </div>
-  )
+    <main className="p-4">
+      <h1 className="text-2xl font-bold">Welcome</h1>
+      <WalletConnectButton />
+    </main>
+  );
 }
