@@ -1,0 +1,22 @@
+{
+  "name": "create-web3-dapp",
+  "version": "1.0.0",
+  "description": "CLI to scaffold full-stack Web3 dApps",
+  "main": "index.js",
+  "type": "module",
+  "bin": {
+    "create-web3-dapp": "./index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["web3", "cli", "dapp", "nextjs", "foundry"],
+  "author": "Saberdev",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "execa": "^9.6.0",
+    "fs-extra": "^11.1.1",
+    "prompts": "^2.4.2"
+  }
+}
