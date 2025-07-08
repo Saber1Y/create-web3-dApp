@@ -2,6 +2,9 @@
 
 A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered by Next.js, TailwindCSS, Wagmi, Reown AppKit, Solidity, and Foundry.
 
+> 📘 **Contribute:** Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting issues or PRs.
+
+
 ---
 
 ## 🧩 Features
