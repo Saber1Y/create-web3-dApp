@@ -1,0 +1,7 @@
+export const SOLANA_CHAINS = [
+    'solana:mainnet',
+    'solana:devnet',
+    'solana:testnet',
+    'solana:localnet'
+];
+//# sourceMappingURL=constants.js.map
