@@ -1,0 +1,6 @@
+[submodule "my-dapp/backend/lib/forge-std"]
+	path = my-dapp/backend/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "templates/backend/lib/forge-std"]
+	path = templates/backend/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
