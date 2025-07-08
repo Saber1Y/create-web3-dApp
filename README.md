@@ -26,6 +26,10 @@ A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered 
 - [Contributing](#contributing)
 - [License](#license)
 
+### 🚨 Note on Dependency Warnings
+
+Some warnings or `npm audit` messages may appear during install — these are from dev tooling and do not affect the security or performance of your dApp. You can safely ignore them for development.
+
 
 ## 🏁 Quick Start
 

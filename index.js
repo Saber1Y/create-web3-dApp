@@ -41,7 +41,7 @@ async function run() {
 
   console.log(chalk.green("\n✅ Project setup complete!\n"));
   console.log(`📁 ${projectName}/frontend → run with: npm run dev`);
-  console.log(`📁 ${projectName}/backend  → test with: forge test`);
+  console.log(`📁 ${projectName}/backend  → test with: forge install`);
 
   console.log(
     chalk.yellow(`
@@ -49,7 +49,7 @@ async function run() {
 
 Create a \`.env.local\` file inside your frontend directory with this content:
 
-  NEXT_PUBLIC_REOWN_PROJECT_ID=your_project_id_here
+NEXT_PUBLIC_REOWN_PROJECT_ID=your_project_id_here
 
 You can get your project ID here: https://cloud.reown.com
 
