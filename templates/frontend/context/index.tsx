@@ -12,7 +12,7 @@ import {
   optimism,
   polygon,
   sepolia,
-} from "@reown/appkit/networks";
+} from "@reown/appkit/networks"; //import chains
 import React, { type ReactNode } from "react";
 import { cookieToInitialState, WagmiProvider, type Config } from "wagmi";
 import type { Chain } from "viem/chains";

@@ -1,17 +1,21 @@
 // frontend/app/layout.tsx
 
-import type { Metadata } from 'next'
-import { headers } from 'next/headers'
-import './globals.css'
-import ContextProvider from '@/context'
+import type { Metadata } from "next";
+import { headers } from "next/headers";
+import "./globals.css";
+import ContextProvider from "@/context/index";
 
 export const metadata: Metadata = {
-  title: 'AppKit Example App',
-  description: 'Powered by WalletConnect & Reown',
-}
+  title: "AppKit Example App",
+  description: "Powered by WalletConnect & Reown",
+};
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const cookies = headers().get('cookie') || ''
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  const cookies = headers().get("cookie") || "";
 
   return (
     <html lang="en">
@@ -19,5 +23,5 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ContextProvider cookies={cookies}>{children}</ContextProvider>
       </body>
     </html>
-  )
+  );
 }
