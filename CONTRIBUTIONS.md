@@ -1,6 +1,6 @@
-# Contributing to Create-web3-dapp NPM Package
+# Contributing to re-dapp NPM Package
 
-Thank you for your interest in contributing to **create-web3-dapp**! We welcome contributions from the community to help improve this project. Whether you're fixing bugs, adding features, improving documentation, or helping with testing, your help is appreciated.
+Thank you for your interest in contributing to **re-dapp**! We welcome contributions from the community to help improve this project. Whether you're fixing bugs, adding features, improving documentation, or helping with testing, your help is appreciated.
 
 ---
 
@@ -12,8 +12,8 @@ Create your own fork of the repository on GitHub by clicking the **Fork** button
 
 ### 2. Clone Your Fork
 
-git clone https://github.com/your-username/create-web3-dapp.git
-cd create-web3-dapp
+git clone https://github.com/your-username/re-dapp.git
+cd re-dapp
 
 ### 3. Install Dependencies
 
@@ -89,6 +89,6 @@ If you need assistance, feel free to:
 
 ## Thank You!
 
-Your contributions help make **create-web3-dapp** better for everyone. We appreciate your time and effort!
+Your contributions help make **re-dapp** better for everyone. We appreciate your time and effort!
 
 ---

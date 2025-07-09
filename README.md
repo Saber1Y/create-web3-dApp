@@ -1,4 +1,4 @@
-# 🚀 Create-web3-dapp NPM Package
+# 🚀 re-dapp NPM Package
 
 A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered by Next.js, TailwindCSS, Wagmi, Reown AppKit, Solidity, and Foundry.
 
@@ -8,7 +8,7 @@ A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered 
 
 ## 🧩 Features
 
-- 🏗️ **Single-command setup** — `npx create-web3-dapp@latest my-dapp`
+- 🏗️ **Single-command setup** — `npx re-dapp@latest my-dapp`
 - ⚛️ Frontend: Next.js (app-router), TypeScript, TailwindCSS, WAGMI & Reown AppKit wallet integration
 - 🔗 Includes Anvil, Sepolia, Arbitrum, Mainnet support out of the box
 - 🔧 Backend: Foundry scaffold for Solidity contracts (`forge test` included)
@@ -33,7 +33,7 @@ Some warnings or `npm audit` messages may appear during install — these are fr
 ## 🏁 Quick Start
 
 ```bash
-npx create-web3-dapp@latest my-dapp
+npx re-dapp@latest my-dapp
 cd my-dapp/frontend
 npm install
 npm run dev
@@ -85,7 +85,7 @@ forge install
 
 ```bash
 git clone <this-repo>
-cd create-web3-dapp
+cd re-dapp
 npm install
 npm run lint
 npm run format
@@ -94,7 +94,7 @@ npm run format
 ```bash
 # For testing locally:
 npm link
-create-web3-dapp test-app
+re-dapp test-app
 ```
 
 ## ⚙️ Technical Choices

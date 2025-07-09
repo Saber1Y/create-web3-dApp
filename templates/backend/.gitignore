@@ -1,14 +1,22 @@
-# Compiler files
-cache/
+# Ignore build artifacts and cache
 out/
+cache/
+target/
 
-# Ignore development broadcast logs
-/broadcast/
-!/broadcast/
-!/broadcast/*/
-!/broadcast/*/*/
-!/broadcast/*/*/*/
+# Ignore Foundry-specific directories
+broadcast/
+broadcast/*/
+broadcast/*/*/
+broadcast/*/*/*/
 
-
-# Dotenv file
+# Ignore environment variable files
 .env
+.env.local
+
+# Ignore IDE and editor directories
+.vscode/
+.idea/
+.DS_Store
+
+# Ignore system-specific files
+Thumbs.db

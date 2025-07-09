@@ -34,7 +34,7 @@ async function run() {
   });
 
   console.log(chalk.cyan("\n🔧 Installing backend dependencies..."));
-  execSync(`forge install`, {
+  execSync(`forge install --no-git`, {
     cwd: join(targetDir, "backend"),
     stdio: "inherit",
   });
