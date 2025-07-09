@@ -1,10 +1,10 @@
 {
-  "name": "re-dapp",
+  "name": "redapp-cli",
   "version": "0.1.0",
   "private": false,
   "type": "module",
   "bin": {
-    "re-dapp": "./index.js"
+    "redapp-cli": "./index.js"
   },
   "publishConfig": {
     "access": "public"
