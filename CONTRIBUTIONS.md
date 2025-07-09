@@ -15,20 +15,17 @@ Create your own fork of the repository on GitHub by clicking the **Fork** button
 git clone https://github.com/your-username/create-web3-dapp.git
 cd create-web3-dapp
 
-
 ### 3. Install Dependencies
 
 ```bash
 npm Install
 ```
 
-
 ### 4. Create a Branch
 
 Create a descriptive branch name for your work:
 
 git checkout -b feature/your-feature-name
-
 
 ### 5. Make Your Changes
 
@@ -44,13 +41,11 @@ npm run lint
 npm run format
 npm test # if applicable
 
-
 ### 7. Commit and Push
 
 git add .
 git commit -m "Add feature: description"
 git push origin feature/your-feature-name
-
 
 ### 8. Open a Pull Request
 
@@ -91,8 +86,6 @@ If you need assistance, feel free to:
 - Reach out via email (your contact info).
 
 ---
-
-
 
 ## Thank You!
 

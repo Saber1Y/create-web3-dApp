@@ -4,7 +4,6 @@ A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered 
 
 > 📘 **Contribute:** Please read [CONTRIBUTING.md](CONTRIBUTING.md) before submitting issues or PRs.
 
-
 ---
 
 ## 🧩 Features
@@ -19,6 +18,7 @@ A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered 
 ---
 
 ## Table of Contents
+
 - [Features](#features)
 - [Quick Start](#quick-start)
 - [Usage](#usage)
@@ -30,10 +30,9 @@ A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered 
 
 Some warnings or `npm audit` messages may appear during install — these are from dev tooling and do not affect the security or performance of your dApp. You can safely ignore them for development.
 
-
 ## 🏁 Quick Start
 
-``` bash
+```bash
 npx create-web3-dapp@latest my-dapp
 cd my-dapp/frontend
 npm install
@@ -50,6 +49,7 @@ NEXT_PUBLIC_REOWN_PROJECT_ID=your_project_id_here
 ```
 
 ## 📂 Folder Structure
+
 ```bash
 my-dapp/
 ├── frontend/        # Next.js + Wallet UI + Styling
@@ -68,10 +68,12 @@ my-dapp/
 ## ⚙️ Usage
 
 ## Frontend
+
 ```bash
 cd frontend
 npm run dev
 ```
+
 ## Backend
 
 ```bash
@@ -96,6 +98,7 @@ create-web3-dapp test-app
 ```
 
 ## ⚙️ Technical Choices
+
 - CLI tooling: prompts, chalk, fs-extra
 
 - Linting: ESLint configured to support modern JS
@@ -107,10 +110,9 @@ create-web3-dapp test-app
 - Adheres to CLI best practices—POSIX args, error handling, colorized output, clean UX.
 
 ## 📜 License
+
 - MIT © Saber
 
-
 ## Contact
-Saber • [@X Username](https://twitter.com/Sabercodes123) •  [GitHub/Saber1Y](https://github.com/Saber1Y) •  [Portfolio](https://Saber-dev.vercel.app)
 
-
+Saber • [@X Username](https://twitter.com/Sabercodes123) • [GitHub/Saber1Y](https://github.com/Saber1Y) • [Portfolio](https://Saber-dev.vercel.app)
