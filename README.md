@@ -1,4 +1,4 @@
-# 🚀 re-dapp NPM Package
+# 🚀 re-dapp-cli NPM Package
 
 A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered by Next.js, TailwindCSS, Wagmi, Reown AppKit, Solidity, and Foundry.
 
@@ -33,7 +33,7 @@ Some warnings or `npm audit` messages may appear during install — these are fr
 ## 🏁 Quick Start
 
 ```bash
-npx re-dapp@latest my-dapp
+npx re-dapp-cli@latest my-dapp
 cd my-dapp/frontend
 npm install
 npm run dev

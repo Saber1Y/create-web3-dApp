@@ -1,4 +1,4 @@
-# Contributing to re-dapp NPM Package
+# Contributing to re-dapp-cli NPM Package
 
 Thank you for your interest in contributing to **re-dapp**! We welcome contributions from the community to help improve this project. Whether you're fixing bugs, adding features, improving documentation, or helping with testing, your help is appreciated.
 
@@ -12,7 +12,7 @@ Create your own fork of the repository on GitHub by clicking the **Fork** button
 
 ### 2. Clone Your Fork
 
-git clone https://github.com/your-username/re-dapp.git
+git clone https://github.com/Saber1Y/re-dapp.git
 cd re-dapp
 
 ### 3. Install Dependencies
