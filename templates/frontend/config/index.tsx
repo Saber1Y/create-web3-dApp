@@ -1,43 +1,41 @@
 import { cookieStorage, createStorage } from "@wagmi/core";
 import { WagmiAdapter } from "@reown/appkit-adapter-wagmi";
-import { mainnet, arbitrum, sepolia } from "@reown/appkit/networks";
+import {
+  mainnet,
+  arbitrum,
+  sepolia,
+  defineChain,
+} from "@reown/appkit/networks"; // or from 'wagmi'
 import { Chain } from "viem";
 
-// 👷 Anvil manual definition
-const anvil: Chain = {
+export const anvil: Chain = {
   id: 31337,
   name: "Anvil",
-  network: "anvil",
   nativeCurrency: {
-    name: "Ethereum",
+    name: "Ether",
     symbol: "ETH",
     decimals: 18,
   },
   rpcUrls: {
-    default: {
-      http: ["http://127.0.0.1:8545"],
-    },
-    public: {
-      http: ["http://127.0.0.1:8545"],
-    },
+    default: { http: ["http://127.0.0.1:8545"] },
+    public: { http: ["http://127.0.0.1:8545"] },
   },
+  blockExplorers: {
+    default: { name: "Local", url: "http://127.0.0.1:8545" },
+  },
+  testnet: true,
 };
 
-export const projectId = "8e67a983dade6ab3c075fe3c0d72e914";
+export const projectId =
+  process.env.NEXT_PUBLIC_REOWN_PROJECT_ID ??
+  (() => {
+    throw new Error("NEXT_PUBLIC_REOWN_PROJECT_ID is missing");
+  })();
 
-if (!projectId) {
-  throw new Error(
-    "Environment variable NEXT_PUBLIC_REOWN_PROJECT_ID is missing."
-  );
-}
-
-// 🌐 All supported networks
-export const networks = [mainnet, arbitrum, sepolia, anvil];
+export const networks = [mainnet, arbitrum, sepolia, anvil]; // or anvil2
 
 export const wagmiAdapter = new WagmiAdapter({
-  storage: createStorage({
-    storage: cookieStorage,
-  }),
+  storage: createStorage({ storage: cookieStorage }),
   ssr: true,
   projectId,
   networks,

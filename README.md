@@ -97,6 +97,47 @@ npm link
 re-dapp test-app
 ```
 
+### 💾 Using Your Contract ABI
+
+1. ✅ Deploy your contract (e.g., `forge deploy`)
+```bash 
+cd backend
+forge build            # compile contracts
+forge deploy           # deploy your contract (e.g., MyToken)
+```
+### 📂 Locate the generated ABI
+After deployment, you’ll find the ABI JSON here:
+
+```bash 
+backend/out/YourContract.sol/YourContract.json
+```
+### 📋 Copy and paste the ABI
+Copy that file into the frontend's ABI folder:
+
+```bash 
+cp backend/out/YourContract.sol/YourContract.json frontend/abi/YourContract.json
+```
+### 📝 Update your contract data file
+In frontend/content/contract.ts, ensure it reads something like this:
+
+```bash
+import YourContract from '@/abi/YourContract.json'
+
+export const CONTRACT_ADDRESS = '0xYourDeployedAddressHere'
+export const contractAbi = YourContract.abi
+```
+
+### ✅ Use it in your code
+You can import and initialize your contract anywhere:
+
+```bash 
+import { contractAbi, CONTRACT_ADDRESS } from '@/content/contract'
+import { ethers } from 'ethers'
+
+const contract = new ethers.Contract(CONTRACT_ADDRESS, contractAbi, signer)
+```
+
+
 ## ⚙️ Technical Choices
 
 - CLI tooling: prompts, chalk, fs-extra

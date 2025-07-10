@@ -35,7 +35,6 @@ const metadata = {
 const anvil: Chain = {
   id: 31337,
   name: "Anvil",
-  network: "anvil",
   nativeCurrency: {
     name: "Ethereum",
     symbol: "ETH",
