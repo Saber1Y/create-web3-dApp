@@ -11,12 +11,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Saber1Y/re-dapp-package.git"
+    "url": "https://github.com/Saber1Y/re-dapp.git"
   },
-  "bugs": {
-    "url": "https://github.com/Saber1Y/re-dapp-package/issues"
-  },
-  "homepage": "https://github.com/Saber1Y/re-dapp-package#readme",
+  "homepage": "https://github.com/Saber1Y/re-dapp#readme",
   "keywords": [
     "web3",
     "cli",
