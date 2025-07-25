@@ -33,7 +33,7 @@ Some warnings or `npm audit` messages may appear during install — these are fr
 ## 🏁 Quick Start
 
 ```bash
-npx re-dapp-cli@latest my-dapp
+npx redapp-cli my-dapp
 cd my-dapp/frontend
 npm install
 npm run dev
