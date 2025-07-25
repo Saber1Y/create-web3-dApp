@@ -8,7 +8,7 @@ A streamlined CLI that bootstraps a full-stack Web3 dApp in seconds — powered 
 
 ## 🧩 Features
 
-- 🏗️ **Single-command setup** — `npx re-dapp@latest my-dapp`
+- 🏗️ **Single-command setup** — `npx redapp-cli`
 - ⚛️ Frontend: Next.js (app-router), TypeScript, TailwindCSS, WAGMI & Reown AppKit wallet integration
 - 🔗 Includes Anvil, Sepolia, Arbitrum, Mainnet support out of the box
 - 🔧 Backend: Foundry scaffold for Solidity contracts (`forge test` included)
